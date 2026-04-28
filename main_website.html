@@ -1,0 +1,3974 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Central Asia: The Heart of the Continent | MSU College of Education
+    </title>
+    <meta
+      name="description"
+      content="An educational website on Central Asia for Araling Panlipunan — covering all five countries: Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Crimson+Pro:wght@400;600&family=Raleway:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+/* ===== CSS VARIABLES ===== */
+:root {
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-dark: #8b6914;
+  --deep-blue: #0d1b2a;
+  --mid-blue: #1b3a5c;
+  --sky-blue: #2e6da4;
+  --terracotta: #b5522a;
+  --sand: #f5e6c8;
+  --sand-dark: #e8d5a3;
+  --cream: #fdf8ef;
+  --white: #ffffff;
+  --text-dark: #1a1a1a;
+  --text-mid: #3d3d3d;
+  --text-light: #7a7a7a;
+  --border: rgba(201, 168, 76, 0.3);
+  --shadow: 0 4px 24px rgba(13, 27, 42, 0.15);
+  --shadow-gold: 0 4px 20px rgba(201, 168, 76, 0.25);
+  --radius: 12px;
+  --radius-sm: 6px;
+  --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== RESET & BASE ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Crimson Pro", "Georgia", serif;
+  background: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", "Georgia", serif;
+  line-height: 1.25;
+  color: var(--deep-blue);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ===== TYPOGRAPHY ===== */
+.section-label {
+  font-family: "Raleway", "Arial Narrow", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin-bottom: 1rem;
+  color: var(--deep-blue);
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-mid);
+  max-width: 640px;
+  line-height: 1.8;
+}
+
+/* ===== DECORATIVE ELEMENTS ===== */
+.gold-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  margin: 1rem 0 1.5rem;
+  border-radius: 2px;
+}
+
+.ornament {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+/* ===== NAVBAR ===== */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(13, 27, 42, 0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+  transition: var(--transition);
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-logo-icon {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.nav-logo-text {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.nav-logo-text span {
+  display: block;
+  font-size: 0.7rem;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  right: 50%;
+  height: 2px;
+  background: var(--gold);
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.08);
+}
+
+.nav-link:hover::after {
+  left: 0.9rem;
+  right: 0.9rem;
+}
+
+.nav-link.active {
+  color: var(--gold);
+}
+
+.nav-cta {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--deep-blue) !important;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 50px !important;
+  font-weight: 700;
+}
+
+.nav-cta:hover {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-gold);
+}
+
+.nav-cta::after {
+  display: none;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  transition: var(--transition);
+  border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===== HERO ===== */
+#hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      160deg,
+      rgba(13, 27, 42, 0.92) 0%,
+      rgba(27, 58, 92, 0.85) 50%,
+      rgba(181, 82, 42, 0.3) 100%
+    ),
+    url("https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_1520,h_700,c_fill/https://cdn.odysseytraveller.com/app/uploads/2020/03/GettyImages-878961280.jpg")
+      center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse at 70% 50%,
+      rgba(201, 168, 76, 0.12) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 20% 80%,
+      rgba(46, 109, 164, 0.15) 0%,
+      transparent 50%
+    );
+}
+
+.hero-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(201, 168, 76, 0.04) 0px,
+    rgba(201, 168, 76, 0.04) 1px,
+    transparent 1px,
+    transparent 20px
+  );
+}
+
+.hero-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 8rem 2rem 4rem;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(201, 168, 76, 0.15);
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  color: var(--gold-light);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5.5vw, 4.2rem);
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.8s 0.15s ease both;
+}
+
+.hero-title .accent {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-desc {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 520px;
+  line-height: 1.85;
+  margin-bottom: 2.5rem;
+  animation: fadeInUp 0.8s 0.3s ease both;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s 0.45s ease both;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--deep-blue);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  border: none;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(201, 168, 76, 0.4);
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: var(--radius);
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+  animation: fadeInRight 0.8s 0.6s ease both;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  animation: bounce 2s infinite;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(201, 168, 76, 0.6), transparent);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 6rem 2rem;
+}
+
+.section-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin-bottom: 3.5rem;
+}
+
+.section-header.center {
+  text-align: center;
+}
+
+.section-header.center .gold-divider {
+  margin: 1rem auto 1.5rem;
+}
+
+.section-header.center .section-subtitle {
+  margin: 0 auto;
+}
+
+/* ===== OVERVIEW SECTION ===== */
+#overview {
+  background: var(--white);
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.overview-image-block {
+  position: relative;
+}
+
+.overview-image-main {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.overview-image-accent {
+  position: absolute;
+  bottom: -2rem;
+  right: -2rem;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 4px solid var(--white);
+  box-shadow: var(--shadow);
+}
+
+.overview-badge {
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  background: linear-gradient(135deg, var(--deep-blue), var(--mid-blue));
+  color: var(--gold);
+  padding: 1.2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.overview-badge-num {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  display: block;
+  line-height: 1;
+}
+
+.overview-badge-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(201, 168, 76, 0.7);
+}
+
+.overview-text p {
+  color: var(--text-mid);
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+.overview-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.feature-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1rem;
+  background: var(--sand);
+  border-radius: var(--radius-sm);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--deep-blue);
+}
+
+.feature-pill .pill-icon {
+  font-size: 1.1rem;
+}
+
+/* ===== COUNTRIES SECTION ===== */
+#countries {
+  background: var(--cream);
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.country-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 1px solid rgba(201, 168, 76, 0.1);
+  cursor: pointer;
+}
+
+.country-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(13, 27, 42, 0.2);
+  border-color: var(--gold);
+}
+
+.country-card-header {
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.country-card-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.country-card:hover .country-card-bg {
+  transform: scale(1.05);
+}
+
+.country-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(13, 27, 42, 0.8) 0%,
+    transparent 60%
+  );
+}
+
+.country-flag-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 27px;
+  border-radius: 3px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.country-card-name {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 1rem;
+  color: var(--white);
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+}
+
+.country-card-body {
+  padding: 1.5rem;
+}
+
+.country-info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.88rem;
+}
+
+.country-info-label {
+  color: var(--text-light);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.country-info-value {
+  color: var(--text-dark);
+  font-weight: 600;
+  text-align: right;
+}
+
+.country-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  color: var(--gold-dark);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.country-card-link:hover {
+  gap: 0.7rem;
+  color: var(--terracotta);
+}
+
+/* ===== HISTORY SECTION ===== */
+#history {
+  background: var(--deep-blue);
+  position: relative;
+  overflow: hidden;
+}
+
+#history::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse at 80% 20%,
+      rgba(201, 168, 76, 0.08) 0%,
+      transparent 50%
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.015) 0px,
+      rgba(255, 255, 255, 0.015) 1px,
+      transparent 1px,
+      transparent 30px
+    );
+}
+
+.history-timeline {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.history-timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.9rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), rgba(201, 168, 76, 0.1));
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3.5rem;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2.35rem;
+  top: 0.3rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 3px solid var(--deep-blue);
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.3);
+}
+
+.timeline-period {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.timeline-title {
+  font-size: 1.35rem;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.timeline-desc {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.timeline-desc strong {
+  color: var(--gold-light);
+}
+
+.history-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+/* ===== GEOGRAPHY SECTION ===== */
+#geography {
+  background: var(--white);
+}
+
+.geo-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.geo-card {
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.geo-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-dark));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.geo-card:hover::before {
+  transform: scaleX(1);
+}
+
+.geo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+  border-color: var(--gold);
+}
+
+.geo-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.geo-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+  color: var(--deep-blue);
+}
+
+.geo-card p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ===== GALLERY SECTION ===== */
+#gallery {
+  background: var(--cream);
+}
+
+.gallery-filter {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-mid);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--deep-blue);
+  border-color: var(--deep-blue);
+  color: var(--gold);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 220px;
+  gap: 0.75rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.gallery-item.wide {
+  grid-column: span 2;
+}
+.gallery-item.tall {
+  grid-row: span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(13, 27, 42, 0.85) 0%,
+    transparent 50%
+  );
+  opacity: 0;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay-title {
+  color: var(--white);
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.gallery-overlay-sub {
+  color: var(--gold-light);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+}
+
+.gallery-zoom-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.gallery-item:hover .gallery-zoom-icon {
+  opacity: 1;
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 85vh;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.lightbox-close:hover {
+  background: var(--terracotta);
+  border-color: var(--terracotta);
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.85rem;
+}
+
+/* ===== RESOURCES SECTION ===== */
+#resources {
+  background: var(--white);
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.resource-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--cream);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+
+.resource-card:hover {
+  background: var(--sand);
+  border-color: var(--gold);
+  transform: translateX(4px);
+}
+
+.resource-icon {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--deep-blue), var(--mid-blue));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.resource-info h4 {
+  font-size: 0.95rem;
+  color: var(--deep-blue);
+  margin-bottom: 0.3rem;
+}
+
+.resource-info p {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  font-family: "Raleway", sans-serif;
+}
+
+.resource-arrow {
+  margin-left: auto;
+  flex-shrink: 0;
+  color: var(--gold);
+  font-size: 1rem;
+  align-self: center;
+  transition: var(--transition);
+}
+
+.resource-card:hover .resource-arrow {
+  transform: translateX(4px);
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact {
+  background: var(--cream);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  color: var(--text-mid);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-detail-icon {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.contact-detail-text h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+  color: var(--deep-blue);
+}
+
+.contact-detail-text p {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact-form {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: "Crimson Pro", serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  transition: var(--transition);
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--gold);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.12);
+}
+
+.form-group textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--deep-blue), var(--mid-blue));
+  color: var(--gold);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.form-submit:hover {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--deep-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.form-success {
+  display: none;
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  color: #2e7d32;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.form-error-msg {
+  color: var(--terracotta);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+  display: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--deep-blue);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 4rem 2rem 2rem;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--terracotta),
+    var(--gold),
+    var(--sky-blue)
+  );
+}
+
+.footer-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand .nav-logo-text {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  max-width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-col h4 {
+  color: var(--gold);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--gold-light);
+  padding-left: 4px;
+}
+
+.footer-bottom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.78rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-credits {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer-school {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ===== MODAL (Country Detail) ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-box {
+  max-width: 860px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-box {
+  transform: translateY(0);
+}
+
+.modal-hero {
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(13, 27, 42, 0.9) 0%,
+    transparent 50%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem 2rem;
+}
+
+.modal-title {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.modal-close:hover {
+  background: var(--terracotta);
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-table tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-table tr:last-child {
+  border-bottom: none;
+}
+
+.modal-table td {
+  padding: 0.75rem 0;
+  vertical-align: top;
+}
+
+.modal-table td:first-child {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  width: 35%;
+}
+
+.modal-table td:last-child {
+  color: var(--text-dark);
+}
+
+.modal-desc {
+  color: var(--text-mid);
+  line-height: 1.8;
+  font-size: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-8px);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+  .hero-stats {
+    max-width: 440px;
+  }
+  .overview-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .overview-image-main {
+    height: 350px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .history-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: rgba(13, 27, 42, 0.98);
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    gap: 0.25rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+  .hero-stats {
+    display: none;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+  }
+
+  .gallery-item.wide {
+    grid-column: span 1;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section {
+    padding: 4rem 1.25rem;
+  }
+
+  .countries-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-item.tall {
+    grid-row: span 1;
+  }
+  .hero-actions {
+    flex-direction: column;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ===== TOOLTIP ===== */
+.tooltip {
+  position: relative;
+}
+
+.tooltip::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background: var(--deep-blue);
+  color: var(--gold);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.72rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+/* ===== BACK TO TOP ===== */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  border: none;
+  border-radius: 50%;
+  color: var(--deep-blue);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-gold);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+  z-index: 100;
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(201, 168, 76, 0.4);
+}
+
+/* ===== LOADING ===== */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--deep-blue);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: opacity 0.5s ease;
+}
+
+.page-loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.loader-logo span {
+  display: block;
+  font-size: 0.8rem;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 0.25rem;
+}
+
+.loader-bar {
+  width: 200px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.loader-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius: 2px;
+  animation: loadProgress 1.5s ease forwards;
+}
+
+@keyframes loadProgress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* ===== RUBRIC SECTION ===== */
+#rubric {
+  background: var(--deep-blue);
+}
+
+.rubric-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.rubric-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.rubric-table th {
+  background: rgba(201, 168, 76, 0.15);
+  color: var(--gold);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.rubric-table td {
+  padding: 0.9rem 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.rubric-table tr:hover td {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.rubric-table td:first-child {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.rubric-table td:nth-child(3) {
+  color: #81c784;
+}
+
+.rubric-total {
+  background: rgba(201, 168, 76, 0.1) !important;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.rubric-total td {
+  color: var(--gold) !important;
+  font-size: 1.1rem !important;
+}
+
+</style>
+  </head>
+  <body>
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="page-loader">
+      <div class="loader-logo">
+        Central Asia
+        <span>Heart of the Continent</span>
+      </div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <div class="nav-logo-icon">🌏</div>
+          <div class="nav-logo-text">
+            Central Asia
+            <span>Educational Reference</span>
+          </div>
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#overview" class="nav-link">Overview</a></li>
+          <li><a href="#geography" class="nav-link">Geography</a></li>
+          <li><a href="#countries" class="nav-link">Countries</a></li>
+          <li><a href="#history" class="nav-link">History</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#resources" class="nav-link">Resources</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-pattern"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">✦ Araling Panlipunan — Araling Asyano</div>
+          <h1 class="hero-title">
+            Central Asia:<br />
+            <span class="accent">Heart of the Continent</span>
+          </h1>
+          <p class="hero-desc">
+            A comprehensive educational reference on the five sovereign nations
+            of Central Asia — exploring their geography, cultures, histories,
+            economies, and political systems for Araling Panlipunan.
+          </p>
+          <div class="hero-actions">
+            <a href="#overview" class="btn-primary">✦ Explore the Region</a>
+            <a href="#countries" class="btn-secondary">View Countries →</a>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Core Nations</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4M+</span>
+            <span class="stat-label">km² Total Area</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">82M+</span>
+            <span class="stat-label">Population</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1991</span>
+            <span class="stat-label">Independence Year</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3000+</span>
+            <span class="stat-label">Years of History</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">✦</span>
+            <span class="stat-label">Silk Road Legacy</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        Scroll to explore
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="overview" class="section">
+      <div class="section-inner">
+        <div class="overview-grid">
+          <div class="overview-image-block fade-in-left">
+            <img
+              src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/671458748_1417031756892932_5087581651270357229_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFjRYrMEzFYiSppwDslx61_NXYECCu4TA41dgQIK7hMDo_hzwpKUt70a1fFADlhZb6PuEKeLIO2Piq-rKi7fF4T&_nc_ohc=2YJ1jHs7sBgQ7kNvwGrUG6h&_nc_oc=AdrkhXdQsS3-jqX--9vYsZhNpnvDVt1o7nL3NxxNpaFmKzgKAIAPeFM074VZrPHuXIk&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&_nc_gid=t_XJjgZrC3km0xJNfMc1NA&_nc_ss=7a2a8&oh=00_Af0pTmQRz3l1WZIsNCX98DURmqK0PyyXhIN4yciTv-Re0A&oe=69F608E7"
+              alt="Central Asia landscape"
+              class="overview-image-main"
+              loading="lazy"
+            />
+            <div class="overview-badge">
+              <span class="overview-badge-num">5</span>
+              <span class="overview-badge-text">Nations</span>
+            </div>
+            <img
+              src="https://cdn.britannica.com/60/96060-050-EEA73BE2/peaks-Pamirs-Tajikistan.jpg"
+              alt="Silk Road heritage"
+              class="overview-image-accent"
+              loading="lazy"
+            />
+          </div>
+          <div class="overview-text fade-in-right">
+            <span class="section-label">Regional Overview</span>
+            <h2 class="section-title">The Crossroads of Civilizations</h2>
+            <div class="gold-divider"></div>
+            <p>
+              Central Asia is a vast, landlocked region of Asia, historically
+              known as the
+              <strong>"crossroads of civilizations."</strong> Situated between
+              Europe and the Far East, it has long served as a vital cultural,
+              political, and economic bridge.
+            </p>
+            <p>
+              The region is defined by its dramatic landscapes — ranging from
+              the high peaks of the <strong>Tian Shan</strong> and
+              <strong>Pamir mountains</strong> to immense deserts and sweeping
+              steppes — and its legacy as the central artery of the ancient
+              <strong>Silk Road</strong>.
+            </p>
+            <p>
+              Following seventy years as part of the Soviet Union, the five core
+              countries of Central Asia gained independence in 1991. Today, they
+              are dynamic, sovereign nations, each navigating the balance
+              between preserving ancient nomadic and Persian traditions,
+              managing their Soviet past, and building modern, global-facing
+              economies.
+            </p>
+            <div class="overview-features">
+              <div class="feature-pill">
+                <span class="pill-icon">🏔️</span> Pamir & Tian Shan
+              </div>
+              <div class="feature-pill">
+                <span class="pill-icon">🐎</span> Nomadic Heritage
+              </div>
+              <div class="feature-pill">
+                <span class="pill-icon">🕌</span> Islamic Civilization
+              </div>
+              <div class="feature-pill">
+                <span class="pill-icon">⚡</span> Energy Resources
+              </div>
+              <div class="feature-pill">
+                <span class="pill-icon">🛤️</span> Silk Road Legacy
+              </div>
+              <div class="feature-pill">
+                <span class="pill-icon">🌾</span> Steppe & Desert
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHYSICAL GEOGRAPHY -->
+    <section id="geography" class="section">
+      <div class="section-inner">
+        <div class="section-header fade-in-up">
+          <span class="section-label">Part I — Physical Geography</span>
+          <h2 class="section-title">The Land of Contrasts</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle">
+            Central Asia borders Russia to the north, China to the east, and
+            Afghanistan and Iran to the south. Its geography is a study in
+            contrasts, heavily influencing its history and culture.
+          </p>
+        </div>
+
+        <div class="geo-cards">
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🌾</span>
+            <h3>Steppes & Deserts</h3>
+            <p>
+              A massive semi-arid grassland (the steppe) dominates the northern
+              part, especially Kazakhstan, fostering a highly developed nomadic
+              pastoral culture. Major deserts include the
+              <strong>Karakum</strong> (covering 80% of Turkmenistan) and
+              <strong>Kyzylkum</strong> deserts, which forced settled
+              populations and ancient trade to cluster around oases.
+            </p>
+          </div>
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🏔️</span>
+            <h3>Mountain Ranges</h3>
+            <p>
+              To the south and east, the landscape is overwhelmed by the
+              <strong>Pamir</strong> and <strong>Tian Shan</strong> mountain
+              ranges — among the highest in the world outside the Himalayas.
+              These ranges provide crucial water sources from glaciers but have
+              also served as natural barriers, separating distinct ethnic and
+              cultural groups such as the mountain-dwelling Tajiks.
+            </p>
+          </div>
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🌊</span>
+            <h3>Water Bodies</h3>
+            <p>
+              The <strong>Caspian Sea</strong> forms the region's western
+              border. Major rivers include the <strong>Amu Darya</strong> and
+              <strong>Syr Darya</strong>, and unique lakes like
+              <strong>Lake Balkhash</strong>. A major environmental challenge
+              has been the shrinking of the <strong>Aral Sea</strong> due to
+              unsustainable agricultural water diversion during the Soviet era —
+              one of the 20th century's worst environmental catastrophes.
+            </p>
+          </div>
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🌡️</span>
+            <h3>Climate</h3>
+            <p>
+              Mostly <strong>continental</strong>, with hot, dry summers (up to
+              +45°C) and cold winters (down to −10°C or lower in the north). The
+              steppe environment fostered nomadic cultures able to adapt to
+              extreme seasonal shifts. Mountain areas experience distinct alpine
+              climates with significant glaciation.
+            </p>
+          </div>
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🛢️</span>
+            <h3>Natural Resources</h3>
+            <p>
+              Central Asia holds enormous reserves of
+              <strong>oil, natural gas</strong> (Turkmenistan has world's
+              largest), <strong>uranium</strong> (Kazakhstan is world's top
+              producer), <strong>gold, coal, chromium, aluminum,</strong> and
+              <strong>cotton</strong>. These resources drive the region's modern
+              economies and geopolitical importance.
+            </p>
+          </div>
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🔌</span>
+            <h3>Hydropower Potential</h3>
+            <p>
+              Tajikistan and Kyrgyzstan's mountainous terrain gives them
+              enormous <strong>hydroelectric power</strong> potential from
+              glacial rivers. Tajikistan is a major electricity exporter in
+              Central Asia. However, infrastructure gaps and geopolitical
+              tensions over water rights limit the sector's full development.
+            </p>
+          </div>
+        </div>
+
+        <!-- Map Info Box -->
+        <div
+          style="
+            background: var(--sand);
+            border-radius: var(--radius);
+            padding: 2rem;
+            border-left: 4px solid var(--gold);
+            margin-top: 2rem;
+          "
+          class="fade-in-up"
+        >
+          <h3 style="margin-bottom: 0.75rem; color: var(--deep-blue)">
+            📍 Regional Map Notes
+          </h3>
+          <p style="color: var(--text-mid); line-height: 1.8">
+            The five core nations of Central Asia are
+            <strong>Kazakhstan</strong> (largest landlocked country in the
+            world, 9th largest overall), <strong>Kyrgyzstan</strong> (dominated
+            by Tian Shan), <strong>Tajikistan</strong> (most mountainous —
+            90%+), <strong>Turkmenistan</strong> (80%+ desert), and
+            <strong>Uzbekistan</strong> (doubly landlocked, most populated). All
+            five gained independence from the Soviet Union on August–December
+            1991. Their current borders were drawn by Soviet nationalities
+            policy in 1924.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTRIES -->
+    <section id="countries" class="section" style="background: var(--cream)">
+      <div class="section-inner">
+        <div class="section-header center fade-in-up">
+          <span class="section-label">Part I — Countries of the Region</span>
+          <h2 class="section-title">Five Sovereign Nations</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle">
+            Each country has a distinct capital, culture, economy, and political
+            system. Click any country card to explore its full profile.
+          </p>
+        </div>
+
+        <div class="countries-grid">
+          <!-- KAZAKHSTAN -->
+          <div class="country-card fade-in-up" data-country="kazakhstan">
+            <div class="country-card-header">
+              <img
+                src="https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_1520,h_700,c_fill/https://cdn.odysseytraveller.com/app/uploads/2020/03/GettyImages-878961280.jpg"
+                alt="Kazakhstan steppe"
+                class="country-card-bg"
+                loading="lazy"
+              />
+              <div class="country-card-overlay"></div>
+              <img
+                src="https://flagcdn.com/w40/kz.png"
+                alt="Kazakhstan flag"
+                class="country-flag-badge"
+              />
+              <h3 class="country-card-name">Kazakhstan</h3>
+            </div>
+            <div class="country-card-body">
+              <div class="country-info-row">
+                <span class="country-info-label">Capital</span
+                ><span class="country-info-value">Astana</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Area</span
+                ><span class="country-info-value">2,724,900 km²</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Population</span
+                ><span class="country-info-value">~21 million</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Currency</span
+                ><span class="country-info-value">Tenge (KZT)</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Language</span
+                ><span class="country-info-value">Kazakh, Russian</span>
+              </div>
+              <a href="#" class="country-card-link">Full Profile →</a>
+            </div>
+          </div>
+
+          <!-- KYRGYZSTAN -->
+          <div class="country-card fade-in-up" data-country="kyrgyzstan">
+            <div class="country-card-header">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Alpine_meadows_and_snow-covered_peaks_in_Khan_Tengri_Nature_Park%2C_Tien_Shan.jpg/330px-Alpine_meadows_and_snow-covered_peaks_in_Khan_Tengri_Nature_Park%2C_Tien_Shan.jpg"
+                alt="Tian Shan mountains Kyrgyzstan"
+                class="country-card-bg"
+                loading="lazy"
+              />
+              <div class="country-card-overlay"></div>
+              <img
+                src="https://flagcdn.com/w40/kg.png"
+                alt="Kyrgyzstan flag"
+                class="country-flag-badge"
+              />
+              <h3 class="country-card-name">Kyrgyzstan</h3>
+            </div>
+            <div class="country-card-body">
+              <div class="country-info-row">
+                <span class="country-info-label">Capital</span
+                ><span class="country-info-value">Bishkek</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Area</span
+                ><span class="country-info-value">199,951 km²</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Population</span
+                ><span class="country-info-value">~7.4 million</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Currency</span
+                ><span class="country-info-value">Som (KGS)</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Language</span
+                ><span class="country-info-value">Kyrgyz, Russian</span>
+              </div>
+              <a href="#" class="country-card-link">Full Profile →</a>
+            </div>
+          </div>
+
+          <!-- TAJIKISTAN -->
+          <div class="country-card fade-in-up" data-country="tajikistan">
+            <div class="country-card-header">
+              <img
+                src="https://cdn.britannica.com/60/96060-050-EEA73BE2/peaks-Pamirs-Tajikistan.jpg"
+                alt="Tajikistan Pamir mountains"
+                class="country-card-bg"
+                loading="lazy"
+              />
+              <div class="country-card-overlay"></div>
+              <img
+                src="https://flagcdn.com/w40/tj.png"
+                alt="Tajikistan flag"
+                class="country-flag-badge"
+              />
+              <h3 class="country-card-name">Tajikistan</h3>
+            </div>
+            <div class="country-card-body">
+              <div class="country-info-row">
+                <span class="country-info-label">Capital</span
+                ><span class="country-info-value">Dushanbe</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Area</span
+                ><span class="country-info-value">143,100 km²</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Population</span
+                ><span class="country-info-value">~10.9 million</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Currency</span
+                ><span class="country-info-value">Somoni (TJS)</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Language</span
+                ><span class="country-info-value">Tajik, Russian</span>
+              </div>
+              <a href="#" class="country-card-link">Full Profile →</a>
+            </div>
+          </div>
+
+          <!-- TURKMENISTAN -->
+          <div class="country-card fade-in-up" data-country="turkmenistan">
+            <div class="country-card-header">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/View_of_Ashgabat_%2842376779291%29.jpg/1280px-View_of_Ashgabat_%2842376779291%29.jpg"
+                alt="Turkmenistan Ashgabat"
+                class="country-card-bg"
+                loading="lazy"
+              />
+              <div class="country-card-overlay"></div>
+              <img
+                src="https://flagcdn.com/w40/tm.png"
+                alt="Turkmenistan flag"
+                class="country-flag-badge"
+              />
+              <h3 class="country-card-name">Turkmenistan</h3>
+            </div>
+            <div class="country-card-body">
+              <div class="country-info-row">
+                <span class="country-info-label">Capital</span
+                ><span class="country-info-value">Ashgabat</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Area</span
+                ><span class="country-info-value">491,210 km²</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Population</span
+                ><span class="country-info-value">7.6 million</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Currency</span
+                ><span class="country-info-value">Manat (TMT)</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Language</span
+                ><span class="country-info-value">Turkmen</span>
+              </div>
+              <a href="#" class="country-card-link">Full Profile →</a>
+            </div>
+          </div>
+
+          <!-- UZBEKISTAN -->
+          <div class="country-card fade-in-up" data-country="uzbekistan">
+            <div class="country-card-header">
+              <img
+                src="https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_1520,h_700,c_fill/https://cdn.odysseytraveller.com/app/uploads/2019/07/registan-square-samarkand.jpg"
+                alt="Uzbekistan Samarkand Registan"
+                class="country-card-bg"
+                loading="lazy"
+              />
+              <div class="country-card-overlay"></div>
+              <img
+                src="https://flagcdn.com/w40/uz.png"
+                alt="Uzbekistan flag"
+                class="country-flag-badge"
+              />
+              <h3 class="country-card-name">Uzbekistan</h3>
+            </div>
+            <div class="country-card-body">
+              <div class="country-info-row">
+                <span class="country-info-label">Capital</span
+                ><span class="country-info-value">Tashkent</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Area</span
+                ><span class="country-info-value">448,978 km²</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Population</span
+                ><span class="country-info-value">~36.8 million</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Currency</span
+                ><span class="country-info-value">Som (UZS)</span>
+              </div>
+              <div class="country-info-row">
+                <span class="country-info-label">Language</span
+                ><span class="country-info-value">Uzbek, Russian</span>
+              </div>
+              <a href="#" class="country-card-link">Full Profile →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORY SECTION -->
+    <section id="history" class="section">
+      <div class="section-inner" style="position: relative; z-index: 2">
+        <div class="section-header center fade-in-up">
+          <span class="section-label" style="color: var(--gold)"
+            >Part II — History of the Region</span
+          >
+          <h2 class="section-title" style="color: var(--white)">
+            Centuries of Civilizations
+          </h2>
+          <div class="gold-divider" style="margin: 1rem auto 1.5rem"></div>
+          <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.6)">
+            From ancient nomadic empires to Soviet rule and modern independence
+            — a journey through Central Asia's rich historical tapestry.
+          </p>
+        </div>
+
+        <div class="history-columns">
+          <div>
+            <h3
+              style="
+                color: var(--gold);
+                font-size: 1.15rem;
+                margin-bottom: 2rem;
+                font-family: &quot;Raleway&quot;, sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+              "
+            >
+              I. Ancient &amp; Classical Periods
+            </h3>
+            <div class="history-timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-period">8th–4th century BCE</span>
+                <h4 class="timeline-title">The Scythians and Persians</h4>
+                <p class="timeline-desc">
+                  The <strong>Scythians (Saka)</strong> dominated the northern
+                  steppes. The
+                  <strong>Persian Achaemenid Empire</strong> established
+                  satrapies in Sogdiana and Bactria, introducing advanced
+                  irrigation and the Zoroastrian religion.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-period">329 BCE</span>
+                <h4 class="timeline-title">
+                  Alexander the Great &amp; Hellenism
+                </h4>
+                <p class="timeline-desc">
+                  <strong>Alexander the Great</strong> conquered the region,
+                  founding cities like Alexandria Eschate (modern Khujand). This
+                  merged Greek and local cultures, creating the
+                  <strong>Greco-Bactrian Kingdom</strong>.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-period">1st century CE</span>
+                <h4 class="timeline-title">
+                  The Kushan Empire &amp; Silk Road
+                </h4>
+                <p class="timeline-desc">
+                  The <strong>Kushans</strong> facilitated the flourishing of
+                  the Silk Road, linking China to Rome.
+                  <strong>Buddhism</strong> spread through the region during
+                  this transformative era of commerce and cultural exchange.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-period">8th century CE</span>
+                <h4 class="timeline-title">
+                  Islamic Conquest — The Golden Age
+                </h4>
+                <p class="timeline-desc">
+                  The <strong>Arab Caliphate</strong> introduced Islam, leading
+                  to a "Golden Age" in cities like Samarkand and Bukhara —
+                  global centers for science, mathematics (pioneered by
+                  <strong>Al-Khwarizmi</strong>), and philosophy.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-period">13th–14th century</span>
+                <h4 class="timeline-title">The Mongol Storm &amp; Timur</h4>
+                <p class="timeline-desc">
+                  In the 13th century, <strong>Genghis Khan</strong> integrated
+                  Central Asia into the Mongol Empire. In the 14th century,
+                  <strong>Timur (Tamerlane)</strong> established a vast empire
+                  centered in Samarkand, marking a peak in Central Asian
+                  architecture and art.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3
+              style="
+                color: var(--gold);
+                font-size: 1.15rem;
+                margin-bottom: 2rem;
+                font-family: &quot;Raleway&quot;, sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+              "
+            >
+              II–IV. Colonial Era to Modern Times
+            </h3>
+            <div class="history-timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-period">19th century – 1917</span>
+                <h4 class="timeline-title">
+                  The Colonial Period — The Great Game
+                </h4>
+                <p class="timeline-desc">
+                  Tsarist Russia expanded south, conquering the Khanates of
+                  <strong>Khiva, Kokand,</strong> and the
+                  <strong>Emirate of Bukhara</strong> in the 1860s–1880s. The
+                  region became a "raw materials colony" for cotton. Local
+                  resistance — the <strong>Basmachi Movement</strong> — emerged
+                  in response.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-period">1917–1991</span>
+                <h4 class="timeline-title">The Soviet Experiment</h4>
+                <p class="timeline-desc">
+                  After the 1917 revolution, Central Asia joined the
+                  <strong>USSR</strong>. The Soviets drew current borders in
+                  1924. Under Stalin, forced collectivization caused massive
+                  famines, but also brought literacy, healthcare, and
+                  industrialization. <strong>Glasnost</strong> in the 1980s
+                  revived nationalism.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-period">1991</span>
+                <h4 class="timeline-title">Independence — Nation-Building</h4>
+                <p class="timeline-desc">
+                  With the collapse of the Soviet Union, all five nations
+                  declared independence. They faced the daunting task of
+                  building national identities from scratch while dealing with
+                  economic collapse and the loss of Soviet subsidies.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-period">1991–Present</span>
+                <h4 class="timeline-title">
+                  Modern Times — Geopolitical Balancing
+                </h4>
+                <p class="timeline-desc">
+                  Central Asia has emerged as a critical player in global energy
+                  and security. Nations balance relations between
+                  <strong>Russia</strong> (security),
+                  <strong>China</strong> (Belt and Road investment), and the
+                  <strong>West</strong> (energy partnerships) — a "multi-vector"
+                  foreign policy. Today's focus includes digital economies,
+                  water resource management, and climate challenges.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="section-inner">
+        <div class="section-header fade-in-up">
+          <span class="section-label">Visual Gallery</span>
+          <h2 class="section-title">Images of Central Asia</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle">
+            Explore the landscapes, cultures, and landmarks of Central Asia's
+            five nations. Click any image to enlarge.
+          </p>
+        </div>
+
+        <div class="gallery-filter fade-in-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="landscape">Landscapes</button>
+          <button class="filter-btn" data-filter="culture">Culture</button>
+          <button class="filter-btn" data-filter="architecture">
+            Architecture
+          </button>
+
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item wide" data-category="landscape">
+            <img
+              src="https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_1520,h_700,c_fill/https://cdn.odysseytraveller.com/app/uploads/2020/03/GettyImages-878961280.jpg"
+              alt="Kazakhstan steppes panorama"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-title">
+                Kazakhstan — The Great Steppe
+              </div>
+              <div class="gallery-overlay-sub">Landscape</div>
+            </div>
+            <div class="gallery-zoom-icon">⊕</div>
+          </div>
+          <div class="gallery-item tall" data-category="architecture">
+            <img
+              src="https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_1520,h_700,c_fill/https://cdn.odysseytraveller.com/app/uploads/2019/07/registan-square-samarkand.jpg"
+              alt="Registan Square Samarkand"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-title">
+                Registan Square, Samarkand
+              </div>
+              <div class="gallery-overlay-sub">Architecture — Uzbekistan</div>
+            </div>
+            <div class="gallery-zoom-icon">⊕</div>
+          </div>
+          <div class="gallery-item" data-category="landscape">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Alpine_meadows_and_snow-covered_peaks_in_Khan_Tengri_Nature_Park%2C_Tien_Shan.jpg/330px-Alpine_meadows_and_snow-covered_peaks_in_Khan_Tengri_Nature_Park%2C_Tien_Shan.jpg"
+              alt="Tian Shan Mountains Kyrgyzstan"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-title">Tian Shan Mountains</div>
+              <div class="gallery-overlay-sub">Landscape — Kyrgyzstan</div>
+            </div>
+            <div class="gallery-zoom-icon">⊕</div>
+          </div>
+          <div class="gallery-item" data-category="landscape">
+            <img
+              src="https://ayan-turkmenistan.travel/wa-data/public/photos/29/00/29/31.970.jpg"
+              alt="Karakum Desert Turkmenistan"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-title">Karakum Desert</div>
+              <div class="gallery-overlay-sub">Landscape — Turkmenistan</div>
+            </div>
+            <div class="gallery-zoom-icon">⊕</div>
+          </div>
+          <div class="gallery-item" data-category="culture">
+            <img
+              src="https://i.ytimg.com/vi/YikFc0INaMg/hq720.jpg"
+              alt="Traditional yurt"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-title">Traditional Yurt</div>
+              <div class="gallery-overlay-sub">Culture — Kyrgyzstan</div>
+            </div>
+            <div class="gallery-zoom-icon">⊕</div>
+          </div>
+          <div class="gallery-item wide" data-category="architecture">
+            <img
+              src="https://fsn1.your-objectstorage.com/worldheritagesite/media/images/w602.2e16d0ba.fill-800x600.jpg"
+              alt="Bukhara Old City UNESCO Heritage"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-title">
+                Bukhara Old City — UNESCO Heritage
+              </div>
+              <div class="gallery-overlay-sub">Architecture — Uzbekistan</div>
+            </div>
+            <div class="gallery-zoom-icon">⊕</div>
+          </div>
+          <div class="gallery-item" data-category="landscape">
+            <img
+              src="https://cdn.britannica.com/60/96060-050-EEA73BE2/peaks-Pamirs-Tajikistan.jpg"
+              alt="Pamir Mountains Tajikistan"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-title">Pamir Mountains</div>
+              <div class="gallery-overlay-sub">
+                Landscape — Tajikistan
+              </div>
+            </div>
+            <div class="gallery-zoom-icon">⊕</div>
+          </div>
+          <div class="gallery-item" data-category="culture">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/View_of_Ashgabat_%2842376779291%29.jpg/1280px-View_of_Ashgabat_%2842376779291%29.jpg"
+              alt="Ashgabat City of White Marble"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-title">
+                Ashgabat — City of White Marble
+              </div>
+              <div class="gallery-overlay-sub">Architecture — Turkmenistan</div>
+            </div>
+            <div class="gallery-zoom-icon">⊕</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CULTURAL HIGHLIGHTS -->
+    <section id="culture" class="section" style="background: var(--white)">
+      <div class="section-inner">
+        <div class="section-header center fade-in-up">
+          <span class="section-label">Social &amp; Cultural Information</span>
+          <h2 class="section-title">Culture, Traditions &amp; Society</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle">
+            From nomadic customs to Silk Road heritage, Central Asian cultures
+            share common values of hospitality, family, and rich artistic
+            traditions.
+          </p>
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+          "
+        >
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🏠</span>
+            <h3>The Yurt — Symbol of Home</h3>
+            <p>
+              The <strong>yurt</strong> (portable circular dwelling) is a
+              central cultural symbol in Kazakhstan and Kyrgyzstan. More than
+              just a tent, it represents the universe and the family — housing
+              sacred rituals, ceremonies, and traditional craftsmanship. Made
+              from birch poles covered in felt and wool, the tunduk (roof
+              circle) appears on Kyrgyzstan's flag.
+            </p>
+          </div>
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🤝</span>
+            <h3>Hospitality — A Core Value</h3>
+            <p>
+              Across all five nations, <strong>hospitality</strong> is one of
+              the strongest cultural values. Guests are treated with great
+              respect and generosity — offered tea, bread (non), and traditional
+              dishes. In Tajik culture, the <em>dastarkhon</em> (tablecloth) is
+              sacred; stepping over it is considered grave disrespect. Refusing
+              food can be seen as impolite.
+            </p>
+          </div>
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🎵</span>
+            <h3>Music &amp; Oral Traditions</h3>
+            <p>
+              The <strong>dombra</strong> (Kazakhstan, two-stringed) and
+              <strong>komuz</strong> (Kyrgyzstan, three-stringed fretless lute)
+              are national instruments. The <strong>Epic of Manas</strong> — one
+              of the world's longest oral epics — is a Kyrgyz national treasure
+              recited by <em>Manaschis</em>. Uzbekistan's
+              <strong>Maqom</strong> classical music is recognized by UNESCO.
+            </p>
+          </div>
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🍽️</span>
+            <h3>Cuisine — Nomadic Flavors</h3>
+            <p>
+              Cuisine is heavily influenced by nomadic traditions. Shared dishes
+              across the region include <strong>plov/beshbarmak</strong> (meat
+              and noodles/rice), <strong>shashlik</strong> (grilled skewered
+              meat), <strong>kumis</strong> (fermented mare's milk),
+              <strong>naan bread</strong>, and
+              <strong>samsa</strong> (pastries). Uzbek <strong>plov</strong> is
+              a UNESCO Intangible Cultural Heritage.
+            </p>
+          </div>
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🎭</span>
+            <h3>Festivals &amp; Celebrations</h3>
+            <p>
+              <strong>Nauryz / Nowruz</strong> (March 21) is the most important
+              cultural celebration across all five nations, marking the Persian
+              New Year and arrival of spring — recognized as UNESCO Intangible
+              Cultural Heritage. Other key celebrations include
+              <strong>Independence Days</strong>,
+              <strong>Victory Day</strong> (May 9), and traditional multi-day
+              wedding ceremonies.
+            </p>
+          </div>
+          <div class="geo-card fade-in-up">
+            <span class="geo-icon">🧵</span>
+            <h3>Arts &amp; Crafts Heritage</h3>
+            <p>
+              Uzbekistan is famous for <strong>ikat weaving</strong>,
+              <strong>suzani embroidery</strong>, ceramics, and wood carving.
+              Turkmenistan's <strong>carpet weaving</strong> — with intricate
+              tribal gul patterns — is world-renowned. The Silk Road cities of
+              Samarkand, Bukhara, and Khiva are
+              <strong>UNESCO World Heritage Sites</strong> known for their
+              magnificent Islamic architecture.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sports -->
+        <div
+          style="
+            background: var(--sand);
+            border-radius: var(--radius);
+            padding: 2rem;
+          "
+          class="fade-in-up"
+        >
+          <h3 style="margin-bottom: 1.25rem; color: var(--deep-blue)">
+            🏇 Traditional Sports of the Steppes
+          </h3>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              gap: 1.25rem;
+            "
+          >
+            <div
+              style="
+                background: var(--white);
+                padding: 1.25rem;
+                border-radius: var(--radius-sm);
+                border-left: 3px solid var(--gold);
+              "
+            >
+              <strong
+                style="
+                  color: var(--deep-blue);
+                  display: block;
+                  margin-bottom: 0.4rem;
+                "
+                >Kok-Boru</strong
+              >
+              <span style="font-size: 0.9rem; color: var(--text-mid)"
+                >Kyrgyz "Dead Goat Polo" — horseback teams compete to place a
+                goat carcass into a goal. The most revered national sport.</span
+              >
+            </div>
+            <div
+              style="
+                background: var(--white);
+                padding: 1.25rem;
+                border-radius: var(--radius-sm);
+                border-left: 3px solid var(--gold);
+              "
+            >
+              <strong
+                style="
+                  color: var(--deep-blue);
+                  display: block;
+                  margin-bottom: 0.4rem;
+                "
+                >Kokpar</strong
+              >
+              <span style="font-size: 0.9rem; color: var(--text-mid)"
+                >The Kazakh version of polo on horseback — a key part of nomadic
+                warrior culture and celebrations.</span
+              >
+            </div>
+            <div
+              style="
+                background: var(--white);
+                padding: 1.25rem;
+                border-radius: var(--radius-sm);
+                border-left: 3px solid var(--gold);
+              "
+            >
+              <strong
+                style="
+                  color: var(--deep-blue);
+                  display: block;
+                  margin-bottom: 0.4rem;
+                "
+                >Er Enish</strong
+              >
+              <span style="font-size: 0.9rem; color: var(--text-mid)"
+                >Kyrgyz horseback wrestling — riders try to pull each other off
+                their mounts. Tests strength and riding skill.</span
+              >
+            </div>
+            <div
+              style="
+                background: var(--white);
+                padding: 1.25rem;
+                border-radius: var(--radius-sm);
+                border-left: 3px solid var(--gold);
+              "
+            >
+              <strong
+                style="
+                  color: var(--deep-blue);
+                  display: block;
+                  margin-bottom: 0.4rem;
+                "
+                >Salbuurun</strong
+              >
+              <span style="font-size: 0.9rem; color: var(--text-mid)"
+                >The ancient Kyrgyz art of hunting with golden eagles and Taigan
+                dogs — still practiced and celebrated at festivals.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES / LINKS -->
+    <section id="resources" class="section" style="background: var(--white)">
+      <div class="section-inner">
+        <div class="section-header fade-in-up">
+          <span class="section-label">External Resources</span>
+          <h2 class="section-title">References &amp; Links</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle">
+            All cited sources and external references used in this educational
+            website. Click any link to open in a new tab.
+          </p>
+        </div>
+
+        <h3
+          style="
+            margin-bottom: 1.25rem;
+            color: var(--deep-blue);
+            font-size: 1.1rem;
+          "
+        >
+          📚 Academic References
+        </h3>
+        <div class="resources-grid" style="margin-bottom: 2.5rem">
+          <a
+            href="https://www.adb.org/sites/default/files/publication/1135881/taj-ado-april-2026.pdf"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">📄</div>
+            <div class="resource-info">
+              <h4>ADB — Tajikistan Economic Outlook 2026</h4>
+              <p>Asian Development Bank, April 2026</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://bilig.yesevi.edu.tr/yonetim/icerik/makaleler/7670-published.pdf"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">📄</div>
+            <div class="resource-info">
+              <h4>Aral Sea Disaster — Socio-economic Dimensions</h4>
+              <p>Uysal Oğuz et al., Bilig, 2026</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://doi.org/10.1596/1813-9450-8940"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">📄</div>
+            <div class="resource-info">
+              <h4>Poverty Measures in Central Asia</h4>
+              <p>Seitz, W., World Bank, 2019</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+        </div>
+
+        <h3
+          style="
+            margin-bottom: 1.25rem;
+            color: var(--deep-blue);
+            font-size: 1.1rem;
+          "
+        >
+          🌐 Country-Specific Resources
+        </h3>
+        <div class="resources-grid" style="margin-bottom: 2.5rem">
+          <a
+            href="https://www.britannica.com/place/Kazakhstan"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🇰🇿</div>
+            <div class="resource-info">
+              <h4>Kazakhstan — Encyclopaedia Britannica</h4>
+              <p>britannica.com</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://about-kazakhstan.com/kazakhstan-economy/"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🇰🇿</div>
+            <div class="resource-info">
+              <h4>Kazakhstan Economy Overview</h4>
+              <p>about-kazakhstan.com</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://www.worldometers.info/world-population/kazakhstan-population/"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🇰🇿</div>
+            <div class="resource-info">
+              <h4>Kazakhstan Population (2026)</h4>
+              <p>worldometers.info</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://www.britannica.com/place/Kyrgyzstan/Government-and-society"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🇰🇬</div>
+            <div class="resource-info">
+              <h4>Kyrgyzstan Government &amp; Society</h4>
+              <p>britannica.com</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://www.worldometers.info/world-population/kyrgyzstan-population/"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🇰🇬</div>
+            <div class="resource-info">
+              <h4>Kyrgyzstan Population (2026)</h4>
+              <p>worldometers.info</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://www.britannica.com/place/Tajikistan"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🇹🇯</div>
+            <div class="resource-info">
+              <h4>Tajikistan — Encyclopaedia Britannica</h4>
+              <p>britannica.com</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://www.worldometers.info/world-population/tajikistan-population/"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🇹🇯</div>
+            <div class="resource-info">
+              <h4>Tajikistan Population (2026)</h4>
+              <p>worldometers.info</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://www.britannica.com/place/Turkmenistan"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🇹🇲</div>
+            <div class="resource-info">
+              <h4>Turkmenistan — Encyclopaedia Britannica</h4>
+              <p>britannica.com</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+        </div>
+
+        <h3
+          style="
+            margin-bottom: 1.25rem;
+            color: var(--deep-blue);
+            font-size: 1.1rem;
+          "
+        >
+          🏛️ International Organizations
+        </h3>
+        <div class="resources-grid" style="margin-bottom: 2.5rem">
+          <a
+            href="https://www.un.org"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🌐</div>
+            <div class="resource-info">
+              <h4>United Nations (UN)</h4>
+              <p>un.org</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://www.sco.int"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🌐</div>
+            <div class="resource-info">
+              <h4>Shanghai Cooperation Organization (SCO)</h4>
+              <p>sco.int</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://eaeunion.org"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🌐</div>
+            <div class="resource-info">
+              <h4>Eurasian Economic Union (EAEU)</h4>
+              <p>eaeunion.org</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://odkb-csto.org"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🌐</div>
+            <div class="resource-info">
+              <h4>Collective Security Treaty Organization (CSTO)</h4>
+              <p>odkb-csto.org</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://www.oic-oci.org"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🌐</div>
+            <div class="resource-info">
+              <h4>Organization of Islamic Cooperation (OIC)</h4>
+              <p>oic-oci.org</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://www.osce.org"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🌐</div>
+            <div class="resource-info">
+              <h4>OSCE — Security &amp; Cooperation in Europe</h4>
+              <p>osce.org</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+        </div>
+
+        <h3
+          style="
+            margin-bottom: 1.25rem;
+            color: var(--deep-blue);
+            font-size: 1.1rem;
+          "
+        >
+          🗺️ Geography &amp; History Sources
+        </h3>
+        <div class="resources-grid">
+          <a
+            href="https://en.wikipedia.org/wiki/History_of_Central_Asia"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">📖</div>
+            <div class="resource-info">
+              <h4>History of Central Asia — Wikipedia</h4>
+              <p>en.wikipedia.org</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://trektajikistan.com/about/pamir-mountains/"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🏔️</div>
+            <div class="resource-info">
+              <h4>Pamir Mountains — Trek Tajikistan</h4>
+              <p>trektajikistan.com</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://www.britannica.com/place/Tien-Shan"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🏔️</div>
+            <div class="resource-info">
+              <h4>Tian Shan Mountains — Britannica</h4>
+              <p>britannica.com</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+          <a
+            href="https://www.britannica.com/topic/Nowruz"
+            target="_blank"
+            rel="noopener"
+            class="resource-card fade-in-up"
+          >
+            <div class="resource-icon">🎉</div>
+            <div class="resource-info">
+              <h4>Nauryz / Nowruz — Britannica</h4>
+              <p>britannica.com</p>
+            </div>
+            <span class="resource-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDITS -->
+    <section id="credits" style="background: var(--deep-blue); padding: 4rem 2rem; border-top: 1px solid rgba(201,168,76,0.15);">
+      <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
+        <span style="font-family:'Raleway',sans-serif; font-size:0.75rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--gold); font-weight:700; display:block; margin-bottom:0.75rem;">Araling Panlipunan — Araling Asyano</span>
+        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.6rem,3vw,2.2rem); color:var(--white); margin-bottom:0.5rem;">Created By</h2>
+        <div style="width:60px; height:3px; background:linear-gradient(90deg,var(--gold),var(--gold-light)); margin:1rem auto 2.5rem; border-radius:2px;"></div>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.25rem 2rem;">
+          <div style="background:rgba(201,168,76,0.07); border:1px solid rgba(201,168,76,0.2); border-radius:12px; padding:1.2rem 2rem; min-width:200px; transition:all 0.3s;">
+            <div style="font-family:'Raleway',sans-serif; font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem; font-weight:700;">01</div>
+            <div style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--white);">Acabado, Jane Raisel</div>
+          </div>
+          <div style="background:rgba(201,168,76,0.07); border:1px solid rgba(201,168,76,0.2); border-radius:12px; padding:1.2rem 2rem; min-width:200px;">
+            <div style="font-family:'Raleway',sans-serif; font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem; font-weight:700;">02</div>
+            <div style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--white);">Driza, Lovely</div>
+          </div>
+          <div style="background:rgba(201,168,76,0.07); border:1px solid rgba(201,168,76,0.2); border-radius:12px; padding:1.2rem 2rem; min-width:200px;">
+            <div style="font-family:'Raleway',sans-serif; font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem; font-weight:700;">03</div>
+            <div style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--white);">Hirondo, Laurence</div>
+          </div>
+          <div style="background:rgba(201,168,76,0.07); border:1px solid rgba(201,168,76,0.2); border-radius:12px; padding:1.2rem 2rem; min-width:200px;">
+            <div style="font-family:'Raleway',sans-serif; font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem; font-weight:700;">04</div>
+            <div style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--white);">Lampas, Cyrine Jane</div>
+          </div>
+          <div style="background:rgba(201,168,76,0.07); border:1px solid rgba(201,168,76,0.2); border-radius:12px; padding:1.2rem 2rem; min-width:200px;">
+            <div style="font-family:'Raleway',sans-serif; font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem; font-weight:700;">05</div>
+            <div style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--white);">Monteclaro, Pretzel</div>
+          </div>
+          <div style="background:rgba(201,168,76,0.07); border:1px solid rgba(201,168,76,0.2); border-radius:12px; padding:1.2rem 2rem; min-width:200px;">
+            <div style="font-family:'Raleway',sans-serif; font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem; font-weight:700;">06</div>
+            <div style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--white);">Retardo, Angelle May</div>
+          </div>
+        </div>
+        <p style="margin-top:2rem; font-family:'Raleway',sans-serif; font-size:0.82rem; color:rgba(255,255,255,0.35); letter-spacing:0.05em;">Marinduque State University &nbsp;·&nbsp; College of Education &nbsp;·&nbsp; 2026</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-inner">
+        <div class="section-header fade-in-up">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">Contact &amp; Feedback</h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="fade-in-left">
+            <h3>We'd Love to Hear From You</h3>
+            <p>
+              Have questions about the content, suggestions for improvement, or
+              want to share feedback on this educational resource? Reach out
+              using the form.
+            </p>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">🏫</div>
+              <div class="contact-detail-text">
+                <h4>Institution</h4>
+                <p>Marinduque State University<br />College of Education</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📍</div>
+              <div class="contact-detail-text">
+                <h4>Address</h4>
+                <p>Tanza, Boac, Marinduque<br />Philippines</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📚</div>
+              <div class="contact-detail-text">
+                <h4>Subject</h4>
+                <p>Araling Panlipunan<br />Araling Asyano — Central Asia</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">🌏</div>
+              <div class="contact-detail-text">
+                <h4>Topic Coverage</h4>
+                <p>
+                  All 5 Central Asian nations<br />History, Culture, Geography,
+                  Politics
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="fade-in-right">
+            <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border);">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfYYUNBqpr5xPZsJbeu-pMObDwdfnwNPLd7Li9kzXBwdgiivw/viewform?embedded=true"
+                width="100%"
+                height="700"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                style="display:block;"
+                loading="lazy"
+              >Loading form…</iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom: 1rem">
+            <div class="nav-logo-icon">🌏</div>
+            <div class="nav-logo-text">
+              Central Asia
+              <span>Heart of the Continent</span>
+            </div>
+          </div>
+          <p>
+            An educational reference website on Central Asia for Araling
+            Panlipunan 7 (Araling Asyano), created by students of the Marinduque
+            State University, College of Education.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Countries</h4>
+          <ul class="footer-links">
+            <li>
+              <a
+                href="#countries"
+                data-country="kazakhstan"
+                style="cursor: pointer"
+                >🇰🇿 Kazakhstan</a
+              >
+            </li>
+            <li>
+              <a
+                href="#countries"
+                data-country="kyrgyzstan"
+                style="cursor: pointer"
+                >🇰🇬 Kyrgyzstan</a
+              >
+            </li>
+            <li>
+              <a
+                href="#countries"
+                data-country="tajikistan"
+                style="cursor: pointer"
+                >🇹🇯 Tajikistan</a
+              >
+            </li>
+            <li>
+              <a
+                href="#countries"
+                data-country="turkmenistan"
+                style="cursor: pointer"
+                >🇹🇲 Turkmenistan</a
+              >
+            </li>
+            <li>
+              <a
+                href="#countries"
+                data-country="uzbekistan"
+                style="cursor: pointer"
+                >🇺🇿 Uzbekistan</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <ul class="footer-links">
+            <li><a href="#overview">Regional Overview</a></li>
+            <li><a href="#geography">Physical Geography</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#culture">Culture &amp; Society</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="https://www.britannica.com" target="_blank"
+                >Britannica</a
+              >
+            </li>
+            <li>
+              <a href="https://www.worldometers.info" target="_blank"
+                >Worldometers</a
+              >
+            </li>
+            <li>
+              <a href="https://www.un.org" target="_blank">United Nations</a>
+            </li>
+            <li>
+              <a href="https://www.adb.org" target="_blank">Asian Dev. Bank</a>
+            </li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-credits">
+          © 2026
+          <span class="footer-school"
+            >Marinduque State University — College of Education</span
+          >. Araling Panlipunan Educational Reference.
+        </p>
+        <p
+          style="
+            color: rgba(255, 255, 255, 0.25);
+            font-family: &quot;Raleway&quot;, sans-serif;
+            font-size: 0.75rem;
+          "
+        >
+          Central Asia: The Heart of the Continent
+        </p>
+      </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close">
+        ✕
+      </button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="" />
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- COUNTRY MODAL -->
+    <div id="country-modal" class="modal-overlay">
+      <div class="modal-box">
+        <div class="modal-hero">
+          <img id="modal-hero-img" src="" alt="" />
+          <div class="modal-hero-overlay">
+            <div>
+              <h2 class="modal-title" id="modal-title"></h2>
+              <p
+                style="
+                  color: var(--gold-light);
+                  font-family: &quot;Raleway&quot;, sans-serif;
+                  font-size: 0.8rem;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                "
+                id="modal-subtitle"
+              ></p>
+            </div>
+          </div>
+          <button id="modal-close" class="modal-close" aria-label="Close">
+            ✕
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="modal-table">
+            <tbody id="modal-table-body"></tbody>
+          </table>
+          <p class="modal-desc" id="modal-desc"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+
+    <script>
+// ===== PAGE LOADER =====
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.querySelector(".page-loader")?.classList.add("hidden");
+  }, 1600);
+});
+
+// ===== NAVBAR =====
+const navbar = document.getElementById("navbar");
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+window.addEventListener("scroll", () => {
+  const scrolled = window.scrollY > 50;
+  navbar?.classList.toggle("scrolled", scrolled);
+  document
+    .getElementById("back-to-top")
+    ?.classList.toggle("visible", window.scrollY > 400);
+});
+
+hamburger?.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu?.classList.toggle("open");
+});
+
+// Close menu on nav link click
+document.querySelectorAll(".nav-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburger?.classList.remove("active");
+    navMenu?.classList.remove("open");
+  });
+});
+
+// Active nav link on scroll
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+
+function updateActiveLink() {
+  const scrollPos = window.scrollY + 120;
+  sections.forEach((section) => {
+    if (
+      scrollPos >= section.offsetTop &&
+      scrollPos < section.offsetTop + section.offsetHeight
+    ) {
+      navLinks.forEach((l) => l.classList.remove("active"));
+      const active = document.querySelector(`.nav-link[href="#${section.id}"]`);
+      active?.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", updateActiveLink);
+
+// ===== SCROLL ANIMATIONS =====
+const animEls = document.querySelectorAll(
+  ".fade-in-up, .fade-in-left, .fade-in-right, .timeline-item",
+);
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add("visible");
+        }, entry.target.dataset.delay || 0);
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.12 },
+);
+
+animEls.forEach((el, i) => {
+  el.dataset.delay = (i % 4) * 80;
+  observer.observe(el);
+});
+
+// ===== GALLERY FILTER =====
+const filterBtns = document.querySelectorAll(".filter-btn");
+const galleryItems = document.querySelectorAll(".gallery-item");
+
+filterBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    filterBtns.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    const filter = btn.dataset.filter;
+    galleryItems.forEach((item) => {
+      if (filter === "all" || item.dataset.category === filter) {
+        item.style.display = "";
+        item.style.animation = "fadeInUp 0.4s ease";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+});
+
+// ===== LIGHTBOX =====
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxCaption = document.getElementById("lightbox-caption");
+
+document.querySelectorAll(".gallery-item").forEach((item) => {
+  item.addEventListener("click", () => {
+    const img = item.querySelector("img");
+    const caption =
+      item.querySelector(".gallery-overlay-title")?.textContent || "";
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = caption;
+    lightbox?.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+document
+  .getElementById("lightbox-close")
+  ?.addEventListener("click", closeLightbox);
+lightbox?.addEventListener("click", (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+function closeLightbox() {
+  lightbox?.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeLightbox();
+    closeModal();
+  }
+});
+
+// ===== COUNTRY MODAL =====
+const modalOverlay = document.getElementById("country-modal");
+const countries = {
+  kazakhstan: {
+    name: "Kazakhstan",
+    subtitle: "The Great Steppe",
+    img: "https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_1520,h_700,c_fill/https://cdn.odysseytraveller.com/app/uploads/2020/03/GettyImages-878961280.jpg",
+    data: [
+      ["Capital", "Astana (formerly Nur-Sultan)"],
+      ["Area", "~2,724,900 km² (9th largest in the world)"],
+      ["Population", "~21 million (2026 estimate)"],
+      [
+        "Ethnicities",
+        "Kazakh (~71.3%), Russian (14.6%), Uzbek, Ukrainian, Uyghur, German",
+      ],
+      ["Religions", "Islam (Sunni ~70%), Russian Orthodox (~17%)"],
+      ["Official Languages", "Kazakh (State), Russian (Official, widely used)"],
+      ["Currency", "Kazakhstani Tenge (KZT)"],
+      [
+        "Government",
+        "Unitary presidential republic — multi-vector foreign policy",
+      ],
+      [
+        "Economy",
+        "Oil, gas, uranium, chromium; largest economy in Central Asia (~$260B GDP)",
+      ],
+      ["Org. Membership", "UN, SCO, CIS, CSTO, EAEU, OIC, OSCE, WTO"],
+    ],
+    desc: "Kazakhstan is the largest landlocked country in the world and a colossal nation of vast steppes and growing modern cities. Its culture is deeply rooted in nomadic heritage — horse culture, kumis (fermented mare's milk), oral epic poetry, and the national sport Kokpar. The dombra, a two-stringed instrument, is a national symbol. Major celebrations include Nauryz (March 21–23) and Independence Day (December 16).",
+  },
+  kyrgyzstan: {
+    name: "Kyrgyzstan",
+    subtitle: "Land of the Celestial Mountains",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Alpine_meadows_and_snow-covered_peaks_in_Khan_Tengri_Nature_Park%2C_Tien_Shan.jpg/330px-Alpine_meadows_and_snow-covered_peaks_in_Khan_Tengri_Nature_Park%2C_Tien_Shan.jpg",
+    data: [
+      ["Capital", "Bishkek"],
+      ["Area", "~199,951 km² (Land: 191,801 km²; Water: 8,150 km²)"],
+      ["Population", "~7,379,895 (April 2026)"],
+      [
+        "Ethnicities",
+        "Kyrgyz (~77.5%), Uzbek (14.2%), Russian (4.1%), Dungan, Uyghur, Tajik",
+      ],
+      [
+        "Religions",
+        "Islam Sunni-Hanafi (~75%), Russian Orthodox (~20%), Other (5%)",
+      ],
+      ["Official Languages", "Kyrgyz (State), Russian (Official)"],
+      ["Currency", "Kyrgyzstani Som (KGS) — introduced May 1993"],
+      [
+        "Government",
+        "Unitary presidential republic (2021 constitution); unicameral parliament (90 seats)",
+      ],
+      [
+        "Economy",
+        "Gold mining (Kumtor), livestock, agriculture; ~33% GDP from remittances",
+      ],
+      [
+        "Org. Membership",
+        "UN, SCO (holds 2025–2026 presidency), CSTO, EAEU, WTO",
+      ],
+    ],
+    desc: "Kyrgyzstan is a country of breathtaking alpine landscapes dominated by the Tian Shan mountains. Its culture is profoundly shaped by nomadic heritage. The yurt (a portable circular dwelling) is a national symbol and appears on the flag. The Kyrgyz oral epic Manas — one of the world's longest — is a source of national identity. Traditional sports include Kok-Boru (dead goat polo), Er Enish (horseback wrestling), and Salbuurun (eagle hunting).",
+  },
+  tajikistan: {
+    name: "Tajikistan",
+    subtitle: "Roof of the World",
+    img: "https://cdn.britannica.com/60/96060-050-EEA73BE2/peaks-Pamirs-Tajikistan.jpg",
+    data: [
+      ["Capital", "Dushanbe (elevation 785 m)"],
+      ["Area", "143,100 km² (max width ~700 km; max length ~350 km)"],
+      ["Population", "~10,935,917 (April 2026); median age 22.4 years"],
+      [
+        "Ethnicities",
+        "Tajik (84.3%), Uzbek (12.2%), Kyrgyz (0.8%), Russian (0.5%), Other (2.2%)",
+      ],
+      [
+        "Religions",
+        "Sunni Islam Hanafi (~90–95%), Ismaili Shia (~3–7%), Russian Orthodox (small minority)",
+      ],
+      [
+        "Official Language",
+        "Tajik (a variety of Persian); Russian widely spoken",
+      ],
+      [
+        "Currency",
+        "Tajikistani Somoni (TJS) — introduced October 30, 2000; 1 Somoni = 100 Dirams",
+      ],
+      [
+        "Government",
+        "Presidential Islamic Republic; President Emomali Rahmon; PM Qohir Rasulzoda",
+      ],
+      [
+        "Economy",
+        "Remittance-driven (>30% GDP); aluminum, cotton, hydropower; Belt & Road investments",
+      ],
+      [
+        "Org. Membership",
+        "UN (1992), SCO, CIS, CSTO, ECO, OIC, OSCE, NATO PfP, WTO (2013)",
+      ],
+    ],
+    desc: "Tajikistan is a nation of stunning high mountains — over 90% is mountainous — and a proud Persian (Tajik) cultural identity, setting it apart from its Turkic-speaking neighbors. The ancient Silk Road city of Khujand, the Pamir mountains, and Persian literary heritage define the country. Traditional weddings are major multi-day events. The Kelin Salom ritual (bride greeting ceremony) is an important cultural tradition shared with Uzbek and Kyrgyz cultures.",
+  },
+  turkmenistan: {
+    name: "Turkmenistan",
+    subtitle: "Land of the Turkmens",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/View_of_Ashgabat_%2842376779291%29.jpg/1280px-View_of_Ashgabat_%2842376779291%29.jpg",
+    data: [
+      ["Capital", 'Ashgabat — "City of White Marble", capital since 1924'],
+      ["Area", "~491,210 km² (over 80% Karakum Desert)"],
+      ["Population", "7.6 million (2025); life expectancy: M 67 / F 73 years"],
+      [
+        "Ethnicities",
+        "Turkmen (~85%), Uzbek (second-largest), Russian (urban minority)",
+      ],
+      ["Religion", "Sunni Islam Hanafi (~90%), Russian Orthodox (minority)"],
+      [
+        "Official Language",
+        "Turkmen (Latin script since 1993); Russian widely used",
+      ],
+      [
+        "Currency",
+        "Turkmenistani Manat (TMT) — introduced 1993; 1 Manat = 100 Tenge",
+      ],
+      [
+        "Government",
+        "Unitary presidential republic (highly centralized); President Serdar Berdimuhamedow",
+      ],
+      [
+        "Economy",
+        "Natural gas (world's largest reserves), cotton, wheat; heavily state-controlled",
+      ],
+      [
+        "Org. Membership",
+        "UN (permanent neutral status since 1995), ECO, OSCE; non-member CIS/SCO to preserve neutrality",
+      ],
+    ],
+    desc: 'Turkmenistan is a land of massive gas wealth and a highly unique, centralized political system with permanent neutrality. Ashgabat is known as the "City of White Marble" due to grandiose state projects. The Akhal-Teke horse, a national treasure, is a powerful symbol. Carpet weaving is the most important cultural heritage — Turkmen carpets are world-famous, with each design representing specific tribes or regions. Nowruz (spring festival) and traditional multi-day weddings are key celebrations.',
+  },
+  uzbekistan: {
+    name: "Uzbekistan",
+    subtitle: "The Pearl of the Silk Road",
+    img: "https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_1520,h_700,c_fill/https://cdn.odysseytraveller.com/app/uploads/2019/07/registan-square-samarkand.jpg",
+    data: [
+      ["Capital", "Tashkent — largest city in Central Asia (~2.6 million)"],
+      ["Area", "448,978 km²"],
+      ["Population", "~36.8 million (2025) — largest in Central Asia"],
+      [
+        "Ethnicities",
+        "Uzbek (84.4%), Tajik (4.9%), Kazakh (3.3%), Karakalpak (2.1%), Russian (2.1%), Others",
+      ],
+      ["Religions", "Sunni Islam (~88–90%), Russian Orthodox (~5–7%), Others"],
+      [
+        "Official Language",
+        "Uzbek (Latin script since 1993); Russian widely used",
+      ],
+      ["Currency", "Uzbekistani Som (UZS)"],
+      [
+        "Government",
+        'Unitary presidential republic; President Shavkat Mirziyoyev (since 2016); "New Uzbekistan" reforms',
+      ],
+      [
+        "Economy",
+        "Cotton, natural gas, gold, uranium, textiles, automotive (GM Uzbekistan); major economic reforms since 2017",
+      ],
+      [
+        "Org. Membership",
+        "UN, CIS, SCO, OIC, ECO; WTO applicant; Turkic States Organization (observer)",
+      ],
+    ],
+    desc: "Uzbekistan is the most populous nation in Central Asia and home to the region's most iconic ancient settled cities. The Silk Road cities of Samarkand, Bukhara, and Khiva are UNESCO World Heritage Sites. Traditional crafts include ikat weaving and suzani embroidery. The national dish is plov (pilaf). Maqom classical music is recognized by UNESCO. Navruz (March 21) is the most important festival. The country is undergoing significant economic and social reforms to open to the world.",
+  },
+};
+
+document.querySelectorAll("[data-country]").forEach((el) => {
+  el.addEventListener("click", () => {
+    const key = el.dataset.country;
+    const country = countries[key];
+    if (!country) return;
+
+    document.getElementById("modal-title").textContent = country.name;
+    document.getElementById("modal-subtitle").textContent = country.subtitle;
+    document.getElementById("modal-hero-img").src = country.img;
+
+    const tbody = document.getElementById("modal-table-body");
+    tbody.innerHTML = country.data
+      .map(([label, val]) => `<tr><td>${label}</td><td>${val}</td></tr>`)
+      .join("");
+
+    document.getElementById("modal-desc").textContent = country.desc;
+    modalOverlay?.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+document.getElementById("modal-close")?.addEventListener("click", closeModal);
+modalOverlay?.addEventListener("click", (e) => {
+  if (e.target === modalOverlay) closeModal();
+});
+
+function closeModal() {
+  modalOverlay?.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+// ===== CONTACT FORM =====
+const contactForm = document.getElementById("contact-form");
+
+contactForm?.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let valid = true;
+
+  // Validate fields
+  const fields = ["name", "email", "message"];
+  fields.forEach((id) => {
+    const input = document.getElementById(`field-${id}`);
+    const err = document.getElementById(`err-${id}`);
+    if (input && !input.value.trim()) {
+      if (err) {
+        err.textContent = "This field is required.";
+        err.style.display = "block";
+      }
+      valid = false;
+    } else {
+      if (err) err.style.display = "none";
+    }
+  });
+
+  // Email format
+  const emailInput = document.getElementById("field-email");
+  if (
+    emailInput?.value &&
+    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)
+  ) {
+    const err = document.getElementById("err-email");
+    if (err) {
+      err.textContent = "Please enter a valid email.";
+      err.style.display = "block";
+    }
+    valid = false;
+  }
+
+  if (!valid) return;
+
+  // Save to localStorage
+  const submission = {
+    id: Date.now(),
+    name: document.getElementById("field-name")?.value,
+    email: document.getElementById("field-email")?.value,
+    subject: document.getElementById("field-subject")?.value,
+    message: document.getElementById("field-message")?.value,
+    timestamp: new Date().toISOString(),
+  };
+
+  const stored = JSON.parse(
+    localStorage.getItem("contact_submissions") || "[]",
+  );
+  stored.push(submission);
+  localStorage.setItem("contact_submissions", JSON.stringify(stored));
+
+  // Show success
+  const successMsg = document.getElementById("form-success");
+  if (successMsg) {
+    successMsg.style.display = "block";
+  }
+  contactForm.reset();
+
+  setTimeout(() => {
+    if (successMsg) successMsg.style.display = "none";
+  }, 6000);
+});
+
+// Clear errors on input
+document
+  .querySelectorAll("#contact-form input, #contact-form textarea")
+  .forEach((el) => {
+    el.addEventListener("input", () => {
+      const err = document.getElementById(`err-${el.id.replace("field-", "")}`);
+      if (err) err.style.display = "none";
+    });
+  });
+
+// ===== BACK TO TOP =====
+document.getElementById("back-to-top")?.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+document.querySelectorAll('a[href^="#"]').forEach((a) => {
+  a.addEventListener("click", (e) => {
+    const target = document.querySelector(a.getAttribute("href"));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+});
+
+console.log(
+  "🌍 Central Asia Educational Website — Marinduque State University",
+);
+
+</script>
+  </body>
+</html>
